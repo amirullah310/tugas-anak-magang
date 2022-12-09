@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar web layout</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .kotak-pertama{
+        background-color: black;
+        height: 100px;
+        width: 100%;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+.kotak-pertama h1 {
+    font-size: 32px;
+
+}
+
+.menu-pertama {
+    display: flex;
+}
+
+.menu-pertama li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 50px;
+}
+.kotak-sidebar, .kotak-submenu, .kotak-content{
+    border: 2px solid white;
+}
+.card-sidebar{
+    background-color: white;
+    height: 150px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+.kotak-sidebar-content {
+    display: flex;
+}
+.kotak-submenu-content{
+    width: 75%;
+}
+
+.kotak-submenu {
+    height: 50px;
+    background-color: aqua;
+    height: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: black;
+    font-size: 700;
+}
+.kotak-submenu ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+article h1{
+    text-align: center;
+}
+
+article p {
+    text-align: justify;
+}
+
+
+.kotak-content {
+ height: 550px;
+ background-color: aquamarine;
+ display: flex;
+ flex-wrap: wrap;
+ padding: 20px;
+}
+
+.article {
+    background-color: white;
+    margin-right: 1%;
+    border-radius: 15px;
+    text-align: center;
+    width: 22%;
+    margin-bottom: 10px;
+    padding: 1%;
+}
+.kotak-sidebar{
+    width: 25%;
+    background-color: chocolate;
+    padding: 30px;
+}
+</style>
+<body>
+    <div class="kotak-besar"> 
+        <div class="kotak-pertama">
+            <h1>Header logo</h1>
+     <ul class="menu-pertama">
+        <li>Header link one</li>
+        <li>Header link two</li>
+        <li>Header link three</li>
+        <li>Header link four</li>
+
+     </ul>
+        </div>
+
+        <div class="kotak-sidebar-content">
+            <div class="kotak-sidebar">
+                <div class="card-sidebar">
+                    Box 1
+                </div>
+                <div class="card-sidebar">
+                    Box 2
+                </div>
+                <div class="card-sidebar">
+                    Box 3
+                </div>
+            </div>
+            <div class="kotak-submenu-content">
+                <div class="kotak-submenu">
+                    <ul>
+                        <li>Lates Article</li>
+                        <li>Most View</li>
+                        <li>Featured</li>
+                    </ul>
+                </div>
+                <div class="kotak-content">
+                    <div class="article"> <h1>Article</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti alias minima enim a quod nobis temporibus officia natus rerum fugiat quibusdam culpa placeat cum consectetur tempora saepe, deserunt nostrum nemo.</p>
+                    </div>
+                    <div class="article"> <h1>Article</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti alias minima enim a quod nobis temporibus officia natus rerum fugiat quibusdam culpa placeat cum consectetur tempora saepe, deserunt nostrum nemo.</p>
+                    </div>
+                    <div class="article"> <h1>Article</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti alias minima enim a quod nobis temporibus officia natus rerum fugiat quibusdam culpa placeat cum consectetur tempora saepe, deserunt nostrum nemo.</p>
+                    </div>
+                    <div class="article"> <h1>Article</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti alias minima enim a quod nobis temporibus officia natus rerum fugiat quibusdam culpa placeat cum consectetur tempora saepe, deserunt nostrum nemo.</p>
+                    </div>
+                    <div class="article"> <h1>Article</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti alias minima enim a quod nobis temporibus officia natus rerum fugiat quibusdam culpa placeat cum consectetur tempora saepe, deserunt nostrum nemo.</p>
+                    </div>
+                    <div class="article"> <h1>Article</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti alias minima enim a quod nobis temporibus officia natus rerum fugiat quibusdam culpa placeat cum consectetur tempora saepe, deserunt nostrum nemo.</p>
+                    </div>
+                    <div class="article"> <h1>Article</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti alias minima enim a quod nobis temporibus officia natus rerum fugiat quibusdam culpa placeat cum consectetur tempora saepe, deserunt nostrum nemo.</p>
+                    </div>
+                    <div class="article"> <h1>Article</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti alias minima enim a quod nobis temporibus officia natus rerum fugiat quibusdam culpa placeat cum consectetur tempora saepe, deserunt nostrum nemo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+</body>
+</html>

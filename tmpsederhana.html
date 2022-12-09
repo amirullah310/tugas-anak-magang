@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            margin: auto;
+            width: 1200px;
+        }
+        .navbar,.footer{
+            height: 50px;
+            background-color: yellow;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+            padding: 15px;
+        }
+        .nama{
+            text-align: center;
+            justify-content: center;
+        }
+        .menu ul , .isi ul{
+            display: flex;
+            list-style: none;
+            
+        }
+        .card{
+            background-color: aliceblue;
+            display: flex;
+            /* background-color: aliceblue; */
+            margin-top: 10px;
+            width: 23%;
+            flex-wrap: wrap;
+            margin: 1%;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+        .menu ul li{
+            margin-right: 25px;
+
+        }
+        .sidebar, .isi{
+            width: 50%;
+        }
+        .content{
+            display: flex;
+            justify-content: space-between;
+            /* max-height: 400px */
+            max-height: 500px;
+            background-color: gold;
+            padding: 25px;
+        }
+        .isi{
+            display: flex;
+        }
+        .sidebar{
+            /* height: 100%; */
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        .sidebar img{
+            height: 100%;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="nama">
+            <h1>AMIRULLAH</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>About</li>
+                    <li>Home</li>
+                    <li>Sosmed</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="sidebar">
+             <img src="img/upin.png" alt="">   
+            </div>
+            <div class="isi">
+                <div class="card">1</div>
+                <div class="card">2</div>
+                <div class="card">3</div>
+                <div class="card">4</div>
+                <div class="card">5</div>
+                <div class="card">6</div>
+                <div class="card">7</div>
+                <div class="card">8</div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="nama">
+                <h1>TERIMAKASIH</h1>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>Page 1</li>
+                        <li>Page 2</li>
+                        <li>Page 3</li>
+                    </ul>
+                </div> 
+        </div>
+    </div>
+</body>
+</html>

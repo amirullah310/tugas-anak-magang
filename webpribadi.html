@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Web Pribadi</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar ul{
+            display: flex;
+            text-align: right;
+            list-style: none;
+
+        }
+        .navbar ul li{
+            margin-right: 50px;
+
+        }
+
+    .navbar{
+        height: 50px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+    .profil{
+        padding-top: 100px;
+        height: 335px;
+        color: white;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .profil img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+    .profil h1{
+         color: rgb(255, 204, 0);
+    }
+    .content-title{
+        background-color: rgb(26, 24, 24);
+        height: 450px;
+        display: flex;
+        
+    }
+    .sidebar{
+        width: 45%;
+        padding: 25px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .content{
+        width: 55%;
+        padding: 60px;
+        color: white;
+    }
+
+.content h1{
+    margin-bottom: 20px;
+     color: rgb(255, 204, 0);
+}
+.content h3{
+    margin-bottom: 10px;
+}
+.content p{
+    margin-bottom: 30px;
+}
+
+.content ul{
+    display: flex;
+}
+.content ul li{
+    margin-right: 50px;
+    /* margin-bottom: 20px; */
+     color: rgb(255, 204, 0);
+}
+.content ul li p{
+    color: white;
+}
+.sidebar img{
+    width: 200px;
+    padding-left: 350px;
+    height: 100%;
+   
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+.card-title{
+    height: 300px;
+    background-color: black;
+    color: white;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 200px;
+    padding-top: 100px;
+    
+}
+.judul h3{
+    text-align: center;
+    margin-bottom: 20px;
+    
+
+
+}
+.judul ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+ 
+}
+.judul ul li{
+    margin-right: 35px;
+    margin-bottom: 15px;
+    /* display: flex;
+    justify-content: center; */
+}
+.card-judul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 100px;
+
+}
+.card{
+            margin-top: 15px;
+            width: 200px;
+            height: 150px;
+            background-color: white;
+            border-radius: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-right: 25px;
+            margin-bottom: 25px;
+            color: black;
+            
+        }
+
+        .blog{
+            background-color: rgb(26, 24, 24);
+            height: 50px;
+            color: white;  
+            
+            justify-content: center;
+            display: flex;
+            
+            
+            
+        }
+        .blog-title{
+            text-align: center;
+            /* margin-bottom: 10px; */
+            width: 100%;
+            padding: 25px;
+            
+        }
+        .blog-head{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            background-color: rgb(26, 24, 24);
+            height: 400px;
+            color: white;
+
+        }
+        
+        .blog-card{
+
+            /* margin-top: 15px; */
+            width: 200px;
+            height: 300px;
+            background-color: black;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin-right: 25px;
+            margin-left: 25px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .blog-title h2{
+            text-align: center;
+            /* margin-bottom: 15px; */
+            /* background-color: aqua; */
+          width: 100%; 
+        }
+        .blog-card h1, .blog-card p{
+             color: rgb(255, 204, 0);
+        }
+        .blog-card h1{
+            font-size: 30px;
+        }
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h3{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        p{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        article{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        ul li{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hero{
+            height: 450px;
+            background-color: black;
+            color: white;
+            padding: 15px;
+            display: flex;
+        }
+        .hero-title{
+            text-align: center;
+            /* margin-bottom: 15px; */
+            color: white;
+            background-color: black;
+            height: 50px;
+            padding-top : 35px;
+        }
+
+        .info{
+            width: 50%;
+            text-align: right;
+            padding-right: 20px;
+            /* background-color: aquamarine; */
+
+        }
+
+        .info p{
+            padding-right: 30px;
+        }
+
+        .info h1{
+            padding-right: 250px;
+            color: rgb(255, 204, 0);
+        }
+
+        .form{
+            width: 50%;
+             /* margin-bottom: 20px;  */
+             padding-left: 100px;
+        }
+
+        .form p{
+            background-color: rgb(26, 24, 24);
+            width: 250px;
+            margin-top: 5px;
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        .form button{
+            background-color: rgb(255, 204, 0);
+            padding: 5px;
+            border-radius: 10px;
+            margin-top: 20px;
+
+        }
+
+        .komen{
+            height: 100px;
+            text-align: center;
+            display: flex;
+            /* justify-content: center;
+            align-items: center; */
+        }
+
+        .btn {
+            padding-left: 180px;
+        }
+
+        /* .form form{
+            margin-bottom: 20px;
+            background-color: aquamarine;
+        }
+        .form input{
+            margin-bottom: 20px;
+        } */
+
+        .footer{
+            height: 120px;
+            background-color: rgb(255, 204, 0);
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            padding-top: 25px;
+            padding-bottom: 8px;
+        }
+
+        .judul p{
+            margin-top: 30px;
+            font-size: 10px;
+        }
+
+        .sosmed{
+            padding-left: 220px;
+        }
+
+        .sosmed ul{
+            list-style: none;
+            display: flex;
+            width: 40px;
+            height: 40px;
+            /* align-items: center; */
+            /* justify-content: center; */
+        }
+
+        .sosmed ul li img{
+            width: 20px;
+            border-radius: 50%;
+            border: 2px solid white;
+            height: 20px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="name">
+             <h1>AMIRULLAH</h1>
+            </div>
+            <div class="menu">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Work</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+            </div>
+        </div>
+        <div class="profil">
+            <img src="img/amir.jpeg" alt="">
+            <h1>AMIRULLAH</h1>
+            <p>I am a Web Designer!</p>
+        </div>
+
+        <div class="content-title">
+            <div class="sidebar">
+                <img src="img/upin.png" alt="">
+            </div>
+            <div class="content">
+                <h3>ABOUT</h3>
+                <h1>AMIRULLAH</h1>
+                <p>Saya adalah seorang siswa SMKN 1 Kota Lhokseumawe dan sedang prakerin di Yapenbit Collage selama 3 bulan kedepan</p>
+            
+            <h3>SKILLS</h3>
+            <ul>
+                <li><p>CSS</p></li>
+                <li><p>HTML</p></li>
+                <li><p>Bootstrap 5.0</p></li>
+            </ul>
+            <ul>
+                <li><p>CSS</p></li>
+                <li><p>HTML</p></li>
+                <li><p>Bootstrap 5.0</p></li>
+            </ul>
+            <ul>
+                <li><p>CSS</p></li>
+                <li><p>HTML</p></li>
+                <li><p>Bootstrap 5.0</p></li>
+            </ul>
+            </div>
+
+            <!-- <div class="skill">
+                <h3>SKILLS</h3>
+                <ul>
+                    <li></li>
+                </ul>
+            </div> -->
+
+        </div>
+        <div class="card-title">
+            <div class="judul">
+                <h3>MATERI</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+            <div class="card-judul">
+             <div class="card"></div>
+             <div class="card"></div>
+             <div class="card"></div>
+             <div class="card"></div>
+             <div class="card"></div>
+             <div class="card"></div>
+             <div class="card"></div>
+             <div class="card"></div>
+             
+            </div>
+        </div>
+        <div class="blog">
+            <div class="blog-title">
+            <h2>BLOG</h2>
+            </div>
+        </div>
+            <div class="blog-head">
+            <div class="blog-card">
+                <h1>HOBI</h1>
+                <article>Hobi saya adalah bermain bulutangkis, karena bulutangkis adalah olahraga yang menyehatkan bagi tubuh kita</article>
+                <p>Selanjutnya</p>
+            </div> 
+             <div class="blog-card">
+                <h1>Kegiatan</h1>
+                <article>Kegiatan saya sekarang adalah sedang berfokus pada html dan css, untuk bisa membuat website yang bagus....</article>
+                <p>Selanjutnya</p>
+            </div> 
+             <div class="blog-card">
+                <h1>Cita cita</h1>
+                <article>Cita cita saya adalah untuk menjadi seorang programmer agar bisa membuat website online dan sebuah aplikasi bermanfaat</article>
+                <p>Selanjutnya</p>
+            </div>
+            </div>
+            <div class="hero-title">
+                <h3>Contact</h3>
+            </div>
+            <div class="hero">
+               
+                <div class="info">
+                    <h1>LET'S TALK</h1>
+                    <p>Ini adalah website personal yang sudah saya buat<br> terimakasih sudah mengunjungi website saya , anda<br> dapat menghubungi saya dengan cara mengeklik icon<br> sosial media dibawah ini. TERIMAKASIH.................</p>
+                    <div class="sosmed">
+                        <ul>
+                         <li><a href="#"><img src="img/ig-removebg-preview.png" alt=""></a></li>
+                         <li><img src="img/email-removebg-preview.png" alt=""></li>
+                         <li><img src="https://cdn.iconscout.com/icon/free/png-128/facebook-logo-2019-1597680-1350125.png" alt=""></li>
+                         <li><img src="https://cdn.iconscout.com/icon/free/png-128/tiktok-3089461-2567413.png" alt=""></li>
+                         <li><a href="#"><img src="https://cdn.iconscout.com/icon/free/png-128/whatsapp-42-189793.png" alt=""></a></li>
+                        </ul>
+                         </div>
+                </div>
+                <!-- <div class="form">
+                    <form>
+                        Nama : <br/>
+                        <input type="text" name="txtEmail" placeholder="Name" size="50"/><br/>
+                        Email : <br/>
+                        <input type="text" name="txtEmail" placeholder="Name" size="50"/><br/>
+                        Komentar : <br/>
+                        <textarea name="komentar" cols="40" rows="4"></textarea>
+                        <p><input type="submit" value="Submit"/></p>
+                    </form>
+                </div> -->
+                <div class="form">
+                    <h3>Name</h3>
+                    <p>What your name here</p>
+                    <h3>Email</h3>
+                    <p>What your email here</p>
+                    <h3>Message</h3>
+                    <p class="komen">What your message here</p>
+                    <div class="btn">
+                    <button>Send Message</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="judul">
+                    <ul>
+                        <li>HOME</li>
+                        <li>ABOUT</li>
+                        <li>WORK</li>
+                        <li>BLOG</li>
+                        <li>CONTACT</li>
+                    </ul>
+                    <h1>AMIRULLAH</h1>
+                    <p>@copyright by malasketik.com 2022</p>
+                </div>
+
+            </div>
+        
+    </div>
+    
+</body>
+</html>

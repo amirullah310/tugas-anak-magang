@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+.item6 { grid-area: buttom; }
+.item7 { grid-area: last; }
+.item8 { grid-area: left; }
+.item9 { grid-area: lastt; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header header'
+    'menu last last last last last last'
+    'menu main main right right left left'
+    'menu footer footer buttom buttom lastt lastt';
+  gap: 5px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+nav ul{
+    display: inline block;
+}
+
+.item2 {
+  text-align: center;
+
+}
+</style>
+</head>
+<body>
+
+  
+
+<div class="grid-container">
+  <div class="item1"> <H1 align="left">Header logo</H1>
+  
+</div>
+  <div class="item2">Menu</div>
+  <div class="item3"><h3>Article Title</h3>
+    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quidem harum architecto, quasi vel voluptatibus possimus delectus ullam blanditiis reprehenderit! Iste ipsa tempora molestias ut dolorum voluptatum illo praesentium voluptate?<h6></div>  
+  <div class="item4"><h3>Article Title</h3>
+    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quidem harum architecto, quasi vel voluptatibus possimus delectus ullam blanditiis reprehenderit! Iste ipsa tempora molestias ut dolorum voluptatum illo praesentium voluptate?<h6></div>
+  <div class="item5"><h3>Article Title</h3>
+    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quidem harum architecto, quasi vel voluptatibus possimus delectus ullam blanditiis reprehenderit! Iste ipsa tempora molestias ut dolorum voluptatum illo praesentium voluptate?<h6></div>
+  <div class="item6"><h3>Article Title</h3>
+    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quidem harum architecto, quasi vel voluptatibus possimus delectus ullam blanditiis reprehenderit! Iste ipsa tempora molestias ut dolorum voluptatum illo praesentium voluptate?<h6></div>
+  <div class="item7">Title</div>
+  <div class="item8"><h3>Article Title</h3>
+    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quidem harum architecto, quasi vel voluptatibus possimus delectus ullam blanditiis reprehenderit! Iste ipsa tempora molestias ut dolorum voluptatum illo praesentium voluptate?<h6></div>
+  <div class="item9"><h3>Article Title</h3>
+    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quidem harum architecto, quasi vel voluptatibus possimus delectus ullam blanditiis reprehenderit! Iste ipsa tempora molestias ut dolorum voluptatum illo praesentium voluptate?<h6></div>
+</div>
+
+</body>
+</html>

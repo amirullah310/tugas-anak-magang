@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .container{
+            width: 1200px;
+            margin: auto;
+            background-color: black;
+            
+        }
+        .navbar{
+            background-color: black;
+             color: red;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            border: 1px solid white;
+        }
+        .logo{
+        height: 100%;
+        margin-right: 25px;
+        display: flex;
+
+        }
+
+        .logo img{
+            height: 100%;
+        }
+
+        .menu ul{
+            list-style: none;
+            height: 100%;
+            display: flex;
+        }
+        .menu{
+            display: flex;
+        }
+
+        .menu ul li{
+            margin-right: 30px;
+
+        }
+
+        .logo h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+        }
+        .profil{
+            height: 350px;
+           
+            border: 1px solid black;
+            color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .intro{
+            width: 50%;
+            text-align: center;
+        }
+        .foto{
+            width: 50%;
+        }
+
+        .foto img{
+            height: 200px;
+            border-radius: 50%;
+            width: 200px  ;
+            padding: 5px 200px;    
+            
+        }
+
+        .sidebar-content{
+            border: 1px solid black;
+            height: 400px;
+            display: flex;
+            justify-content: space-between;
+            
+
+        }
+
+        .sidebar{
+            width: 25%;
+        }
+        .sidebar img{
+            height: 80%;
+            width: 200px;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 80px;
+        }
+
+        .content{
+            width: 75%;
+            padding: 10px 50px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    .content ul{
+        list-style: none;
+        text-align: center;
+    }
+
+    .content ul li{
+        margin-bottom: 20px;
+        background-color: white;
+        border-radius: 15px;
+        padding: 15px;
+    }
+
+    .sidebar h1{
+        text-align: center;
+        margin-bottom: 5px;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+    }
+    .hero-content{
+            justify-content: space-between;
+            display: flex;
+            margin-bottom: 25px;
+    }
+
+    .card{
+            margin-top: 15px;
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;
+        }
+        .card img{
+            height: 100%;
+            width: 100%;
+        }
+        .favorit-card{
+background-color: black;
+padding: 25px 50px;
+color: red;
+        }
+        .info{
+            height: 350px;
+            color: white;
+            background-color: black;
+            display: flex;
+        }
+
+        .info-side{
+            width: 50%;
+            padding: 20px 20px;
+
+        }
+        .info-side h1{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .info-content{
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        .favorit h1{
+            font-family: 'Courier New', Courier, monospace;
+            margin-bottom: 10px;
+        }
+
+        .info-side img{
+            height: 300px;
+            border-radius: 50%;
+            width: 300px  ;
+            padding: 5px 200px;    
+
+        }
+
+        .footer{
+            height: 100px;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        body{
+            background-color: rgb(28, 27, 27);
+        }
+        
+        .contentt{
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 30px;
+        height: 600px;
+        color: white;
+
+        }
+        .content-title p{
+            color: red;
+        }
+        .content-title h4{
+            text-align: justify;
+            padding-right: 400px;
+            padding-top: 15px;
+            font-weight: 0;
+        }
+        .border{
+            border: 1px solid white;
+            margin-bottom: 360px;
+            margin-top: 10px;
+            border-radius: 15px;
+            background-color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+        }
+        .border img{
+            height: 40px;
+            width: 40px;
+        }
+        .border h2{
+            padding-right: 100px;
+            display: flex;
+        }
+
+        .border p{
+            text-align: justify;
+        }
+        .border h4{
+            color: red;
+            padding-top: 15px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logoaw-removebg-preview.png" alt="">
+                <h1>AMIRULLAH</h1>
+            </div>
+            <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tentang Saya</a></li>
+                <li><a href="#">Kegiatan</a></li>
+            </ul>
+
+            </div>
+        </div>
+            <div class="profil">
+                <div class="intro">
+                    <p>Wellcome to website..</p>
+                    <h1>AMIRULLAH</h1>
+                    <p>I'm the next generatin programmer</p>
+                </div>
+                <div class="foto">
+                    <img src="img/amir.jpeg"/>
+                </div>
+
+            
+    </div>
+    <div class="contentt">
+        <div class="content-title">
+            <p>About me</p>
+            <h1>I'm here to help your next project</h1>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error obcaecati nulla tenetur magni, unde necessitatibus rem reprehenderit ad laborum libero? Dignissimos voluptate voluptatibus necessitatibus doloribus voluptatum libero id ipsam veritatis?</h4>
+        </div>
+        <div class="border">
+            <img src="https://cdn.iconscout.com/icon/free/png-128/profile-2337176-1982537.png" alt="">
+            <h2>Web Development</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quidem excepturi quaerat voluptas earum placeat voluptatibus odit impedit ullam dolores quod nostrum.</p>
+            <h4>Lorem Ipmort</h4>
+        </div>
+    </div>
+    <div class="sidebar-content">
+        <div class="sidebar">
+            <h1>PRESTASI</h1>
+            <img src="img/Piala.png" alt="">
+        </div>
+        <div class="content">
+            <ul>
+                <li><img src="" alt="">Juara 1 Lomba Ayat Pendek</li>
+                <li><img src="" alt="">Juara 1 Lomba Sikat Gigi</li>
+                <li><img src="" alt="">Juara 1 Lomba Azan</li>
+                <li><img src="" alt="">Juara 2 Lomba Melukis</li>
+                <li><img src="" alt="">Juara 3 Lomba Catur</li>
+            </ul>
+        </div>
+    </div>
+    <div class="favorit-card">
+        <div class="favorit">
+            <h1>Hewan Favorit</h1>
+        </div>
+      <div class="hero-content">
+        <div class="card"><img src="img/12.-Tips-Merawat-Anak-Kucing-Munchkin.jpg" alt=""></div>
+        <div class="card"><img src="img/Guppy-male.jpg" alt=""></div>
+        <div class="card"><img src="img/Ikan-Cupang-Beta-Fish.jpeg" alt=""></div>
+      </div>
+    </div>
+    <div class="info">
+        <div class="info-side">
+            <h1>About me</h1>
+            <img src="img/2720407861-removebg-preview.png" alt="">
+        </div>
+        <div class="info-content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque qui, fugit necessitatibus blanditiis earum aspernatur. Accusantium deleniti atque suscipit pariatur in ullam architecto, exercitationem ea, voluptates natus quidem, sint obcaecati?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo blanditiis sed dolor tenetur quaerat porro laboriosam pariatur, iste sint eveniet nemo accusamus ullam mollitia odit libero dolores, et temporibus nostrum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste cupiditate blanditiis culpa facere, dolores non fuga cumque optio, sequi neque temporibus! Cum distinctio possimus at sint voluptates dolor illo minima?</p>
+        </div>
+    </div>
+    <div class="footer">
+    <hr>
+    <footer style="text-align: center;">
+        <p>Create by Amirullah.</p>
+    </footer>
+    </div>
+
+    </div>
+</body>
+</html>
